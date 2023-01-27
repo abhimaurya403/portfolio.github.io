@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/16db3ab498.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+
+    <!-- -------------------------------------Home-------------------------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/abhi.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certification</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+               
+                <h1 >Hi I'm <span>Abhishek Maurya</span> <br>Welcoming you in my <br>Portfolio</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------About--------------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/My photo1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Final Year B.Tech (Computer Science) Student at Vellore Institute of Technology , Bhopal
+                      I'm from Gorakhpur, Uttar Pradesh.
+                      Recently I Placed in Super Dream Company (Amdocs)  through College Placement.
+                      Now I'm Working as a trainer in Amdocs.
+                      I am a hard-working person, who Loves Coding , problem-solving.
+                        </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link"onclick="opentab('Experience')">Internship</p>
+                        <p class="tab-link"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills  - </span>C ,C++, Java (core) ,Javascript ,MySQL,Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Internship from SHAPEAI</span></li>
+                            <li><span></span>In this training and internship I have learned how to build an interface of a website with the help of HTML, CSS, JAVASCRIPT,BOOTSTRAP, TAILWINDCSS and I have learned how to design and build databases for software applications.</li>
+                            <li><span>Internship from Prograd</span></li>
+                            <li>In this training and internship I have learned how to build an interface of website with the 
+                                help of HTML ,CSS, Javascript. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Graduation</span> - 9.06 Cgpa</li>
+                            <li><span>12th</span> - 91.4%</li>
+                            <li><span>10th</span> - 93.1%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------Services--------------------------------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certification</h1>
+        <div class="services-list">
+           
+            <div>
+                <h2>Google Codejam 2022</h2>
+                <p>Qualified in Qualification Round of Google Codejam 2022</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Google HashCode 2022</h2>
+                <p>Qualified in Qualification Round of Google HashCode 2022</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Web design</h2>
+                <p>Full Stack Web Development From SHAPEAI</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>DSA</h2>
+                <p>Data Structures and Algorithms From Udemy</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Computer Networking</h2>
+                <p>Bits and Bytes of Computer Networking From Coursera</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Android Development</h2>
+                <p>Certification in Android Development from TechGyan</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Google Kickstart Round F</h2>
+                <p>Qualified in Google Kickstart Round F</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Prograd Internship</h2>
+                <p>Certified in Front-end Development</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- --------------------------------------------Portfolio--------------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Puppies.jpg" alt="">
+                <div class="layer">
+                    <h3>Animal WelFare</h3>
+                    <p>Description- Through this Website we can donate money to help homeless animals like(street dogs,cows etc).</p>
+                    <p>Technology- HTML , CSS , JAVASCRIPT , PHP , MYSQL , BOOTSTRAP</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/task-management-software.jpg" alt="">
+                <div class="layer">
+                    <h3>Task Management software</h3>
+                    <p>Description- Adding card on web page which includes image with description and also it contain features like Editing,deleting card.
+                        Technology- HTML, CSS, JAVASCRIPT, BOOTSTRAP</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/download (6).jfif" alt="">
+                <div class="layer">
+                    <h3>Covid-19 Tracker App</h3>
+                    <p>Description- This app shows all the live data like no. of active cases, no. of deaths, no. of recovered cases etc.</p>
+                      <p>Language - Java</p>  
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/GoTrip.jpg" alt="">
+                <div class="layer">
+                    <h3>Travel Website</h3>
+                    <p>Description- This website provides travel reviews,trip fares and we can book the trip.
+                        Technology- HTML, CSS, JAVASCRIPT, BOOTSTRAP,PHP, MYSQL</p>
+                      
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ------------------------------Contact----------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                  <h1>Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>abhishekmaurya403@gmail.com</p>
+                  <p><i class="fa-solid fa-envelope"></i>abhishek.maurya2019@vitbhopal.ac.in</p>
+                  <p><i class="fa-solid fa-phone"></i>6386606965</p>
+                  <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <a href="images/abhishek.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-link");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablin of tablinks){
+                tablin.classList.remove("active-link");
+            }
+            for(tabcont of tabcontents){
+                tabcont.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+      
+    </script>
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right= "0";
+        }
+        function closemenu(){
+            sidemen.style.right= "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqq7bFhKzp-BBKscmVlwbbF3jrDa1wJR_og7TDDvhLU5k056_ue_Cbv6UEOyVHi9DD/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
